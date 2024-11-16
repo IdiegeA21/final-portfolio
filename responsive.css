@@ -1,0 +1,223 @@
+@media (max-width: 1270px) {
+    .intro-content {
+        width: 40%;
+        padding-left: 0;
+    }
+    .intro-image {
+        width: 58%;
+    }
+
+}
+
+@media (max-width: 1230px) {
+    .intro-btn {
+        transform: translateY(16px);
+    }
+    .intro-btn .btn{
+        width: 80%;
+        display: block;
+        text-align: center;
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    .intro-btn .btn:last-child{
+       margin-top: 1rem;
+    }
+    .get-my-cv:before {
+        width: 60%;
+        left: -60%;
+    }
+}
+
+@media (max-width: 880px) {
+    .intro {
+        padding-left: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .intro-content {
+        width: 80%;
+        margin: 0 auto;
+        position: absolute;
+        z-index: 2;
+    }
+    .intro-image {
+        width: 100%;
+    }
+    .intro-image img {
+        object-position: top;
+    }
+
+    .sal {
+        text-align: center;
+        width: 100%;
+        color: #f40000;
+    }
+    .sal-content {
+        text-align: center;
+        font-weight: 600;
+    }
+    .intro-btn {
+        transform: translateX(10%);
+    }
+}
+@media (max-width: 650px) {
+    .header {
+        margin: 0;
+        height: 80px;
+        width: 100%;
+        padding: 0 1rem;
+        top: 0;
+        background-color: rgba(58, 51, 51, 0.158);
+        position: fixed;
+
+    }
+    .brand {
+        z-index: 10;
+    }
+    .brand a{
+        color: white;
+    }
+    .menu{
+        overflow: hidden;
+    }
+
+    /* redesigning the navmenu to take the whole screen */
+    .menu ul {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        left: 100%;
+        background-color: #191919;
+        width: 100vw;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        transition-duration: .5s;
+    }
+    
+    .menu ul li {
+        margin: 2rem auto;
+        font-size: 1.3rem;
+    }
+
+
+    /* navbar button for smaller screen sizes */
+    .menu-toggler {
+        display: flex; /* this cancels out the previous decleared display of none */
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        z-index: 10;
+        position: fixed;
+        top: 23px;
+        right: 20px;
+    }
+
+    .menu-toggler>span,
+    .menu-toggler>span::after,
+    .menu-toggler>span::before {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+        transition-duration: .25s;
+    }
+
+    .menu-toggler>span {
+        position: relative;
+    }
+
+    .menu-toggler>span::before {
+        content: '';
+        top: -8px;
+    }
+
+    .menu-toggler>span::after {
+        content: '';
+        top: 8px;
+    }
+    .menu-toggler.tive {
+        display: flex;
+    }
+    .menu-toggler.tive>span {
+        transform: rotate(45deg);
+        transition-duration: .25s;
+    }
+
+    .menu-toggler.tive>span::before {
+        top: 0;
+        transform: rotate(0);
+        transition-duration: .25s;
+    }
+
+    .menu-toggler.tive>span::after {
+        top: 0;
+        transform: rotate(90deg);
+        transition-duration: .25s;
+    }
+    /* end of navbar toggler */
+
+    /* style to bring the smaller nav menu into viewport */
+    .menu ul.open {    
+        top: 0;
+        left: 0;
+    }
+    .intro-content {
+        transform: translateY(15%);
+        background-color: #ffffffb8;
+        padding-bottom: 3rem;
+    }
+
+    .intro-image img {
+        object-position: 55%;
+    }
+
+    .btn {
+        font-size: 10px;
+    }
+
+    .handles {
+        bottom: 3rem;
+    }
+}
+
+
+
+/* For the Works section */
+
+@media screen and (max-width: 510px){
+    .w-card {
+        width:100%
+    }
+}
+
+
+/* For the footer section */
+
+@media (max-width: 800px) {
+    .foot1, .foot2{
+        flex-wrap: wrap;
+    }
+    .foot1 > p {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+
+    .cn-me ul {
+        width: 100% !important;
+    }
+    .cn-me ul:last-child {
+        margin: 2rem 0 0 !important;
+    }
+    .foot-btn {
+        width: 100%;
+    }
+    .foot-btn:last-child {
+        margin-top: 1rem;
+    }
+}
